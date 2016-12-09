@@ -1,889 +1,1309 @@
-2016/12/08 17:17:24 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+2016/12/09 09:24:28 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
 Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#13 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#14 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:18:23 [error] [exception.ParseError] ParseError: syntax error, unexpected '*', expecting function (T_FUNCTION) in /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php:72
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:24:36 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
 Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(276): CWebApplication->createController('index/')
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#2 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#3 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#4 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:19:06 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:24:58 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
 Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#13 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#14 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:19:35 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:25:03 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
 Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#13 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#14 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:19:53 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
-Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#13 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#14 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:22:11 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
-Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#13 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#14 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:22:31 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:130
-Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/layouts/column1.php(4): CComponent->__get('pageCaption')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(784): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
-#4 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#5 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#11 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#12 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#13 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:22:50 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:130
-Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/layouts/column1.php(4): CComponent->__get('pageCaption')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(784): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
-#4 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#5 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#11 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#12 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#13 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:23:27 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:130
-Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/layouts/column1.php(4): CComponent->__get('pageCaption')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(784): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
-#4 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#5 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#11 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#12 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#13 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:26:34 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:130
-Stack trace:
-#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/layouts/column1.php(4): CComponent->__get('pageCaption')
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
-#3 /mnt/code/yii1.1-test/framework/web/CController.php(784): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
-#4 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#5 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#8 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#11 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#12 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#13 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:27:45 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:30:25 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(11): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:02 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:03 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:03 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:57 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:58 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:58 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:58 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:58 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:58 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:37:59 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:41:10 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:51:16 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:51:18 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:51:18 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 17:51:19 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
-HTTP_REFERER=http://www.yii1.com/index.php?r=site/login
----
-2016/12/08 18:04:03 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
----
-2016/12/08 18:04:34 [error] [exception.CException] CException: Alias "bootstrap.widgets.TbButton" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
-#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
-#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(180): CBaseController->createWidget('bootstrap.widge...', Array)
-#3 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(10): CBaseController->widget('bootstrap.widge...', Array)
-#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
-#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
-#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
-#7 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
-#8 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(8): CController->render('index')
-#9 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
-#10 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
-#11 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
-#12 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
-#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
-#14 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
-#15 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#16 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#17 {main}
-REQUEST_URI=/index.php?r=site/index
----
-2016/12/08 18:04:40 [error] [exception.CException] CException: Alias "gii.GiiModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/YiiBase.php(196): YiiBase::import('gii.GiiModule', true)
-#1 /mnt/code/yii1.1-test/framework/base/CModule.php(282): YiiBase::createComponent(Array, 'gii', NULL, Array)
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(337): CModule->getModule('gii')
-#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(276): CWebApplication->createController('')
-#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#5 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#6 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#7 {main}
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
 REQUEST_URI=/index.php?r=gii
 ---
-2016/12/08 18:06:14 [error] [exception.CException] CException: Alias "gii.GiiModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in /mnt/code/yii1.1-test/framework/YiiBase.php:323
+2016/12/09 09:25:04 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
 Stack trace:
-#0 /mnt/code/yii1.1-test/framework/YiiBase.php(196): YiiBase::import('gii.GiiModule', true)
-#1 /mnt/code/yii1.1-test/framework/base/CModule.php(282): YiiBase::createComponent(Array, 'gii', NULL, Array)
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(337): CModule->getModule('gii')
-#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(276): CWebApplication->createController('')
-#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#5 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#6 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#7 {main}
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:29:33 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:29:35 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
 REQUEST_URI=/index.php?r=gii
 ---
-2016/12/08 18:06:25 [error] [php] scandir() has been disabled for security reasons (/mnt/code/yii1.1-test/framework/gii/GiiModule.php:216)
+2016/12/09 09:29:35 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
 Stack trace:
-#0 /mnt/code/yii1.1-test/framework/base/CModule.php(90): GiiModule->init()
-#1 /mnt/code/yii1.1-test/framework/YiiBase.php(206): GiiModule->__construct()
-#2 /mnt/code/yii1.1-test/framework/base/CModule.php(282): createComponent()
-#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(337): CWebApplication->getModule()
-#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:29:40 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:29:40 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:30:04 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:30:05 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:30:06 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:30:06 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:31:07 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:31:07 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:31:13 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:31:13 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:31:13 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:31:14 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:31:14 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/12/09 09:31:14 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:31:58 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii1.1-test/yii/index.php?r=gii
+---
+2016/12/09 09:33:49 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii1.1-test/yii/index.php?r=gii
+---
+2016/12/09 09:35:23 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:35:27 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:37:17 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii1.1-test/yii/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:37:30 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii1.1-test/yii/index.php?r=site/index
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:39:22 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:39:23 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:39:23 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:40:30 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:41:40 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:42:53 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:43:01 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:43:01 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:43:01 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:43:01 [error] [php] include(BController.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/components/Controller.php(25): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(281): SiteController->init()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /mnt/code/yii1.1-test/yii/protected/components/Controller.php (25)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 09:43:39 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:43:39 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:43:54 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php?r=gii/default/index
+---
+2016/12/09 09:43:54 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php?r=gii/default/index
+---
+2016/12/09 09:43:56 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:43:56 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:08 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:08 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:09 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:09 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:09 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:09 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:10 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:10 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:10 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:10 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:15 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:15 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 09:47:16 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 09:47:16 [error] [exception.CException] CException: Property "SiteController.pageCaption" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/themes/bootstrap/views/site/index.php(2): CComponent->__set('pageCaption', '')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', NULL, true)
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', NULL, true)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#5 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): CController->render('index')
+#6 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#11 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php
+---
+2016/12/09 10:21:21 [error] [php] Undefined variable: title (/mnt/code/yii1.1-test/yii/protected/views/site/index.php:9)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): SiteController->runAction()
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/index
+in /mnt/code/yii1.1-test/yii/protected/views/site/index.php (9)
+in /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php (32)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 10:21:21 [error] [php] Undefined variable: title (/mnt/code/yii1.1-test/yii/protected/views/site/index.php:9)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(869): SiteController->renderFile()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): SiteController->runAction()
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/favicon.ico
+in /mnt/code/yii1.1-test/yii/protected/views/site/index.php (9)
+in /mnt/code/yii1.1-test/yii/protected/controllers/SiteController.php (32)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 11:52:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "Item". in /mnt/code/yii1.1-test/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://www.yii1.com/index.php?r=site/index
+---
+2016/12/09 11:53:17 [error] [exception.CException] CException: ContestantController cannot find the requested view "index". in /mnt/code/yii1.1-test/framework/web/CController.php:878
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(12): CController->render('index')
+#2 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 11:53:17 [error] [exception.CException] CException: ContestantController cannot find the requested view "index". in /mnt/code/yii1.1-test/framework/web/CController.php:878
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(12): CController->render('index')
+#2 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/12/09 14:18:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vote.{{vote_contestant}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{vote_contestant}}`.
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (16)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 14:18:33 [error] [exception.CDbException] CDbException: The table "{{vote_contestant}}" for active record class "Contestant" cannot be found in the database. in /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Contestant))
+#1 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(16): CActiveRecord->__construct()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=contestant/add
+---
+2016/12/09 14:19:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vote.{{vote_contestant}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{vote_contestant}}`.
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (16)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 14:19:22 [error] [exception.CDbException] CDbException: The table "{{vote_contestant}}" for active record class "Contestant" cannot be found in the database. in /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Contestant))
+#1 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(16): CActiveRecord->__construct()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=contestant/add
+---
+2016/12/09 14:28:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vote.{{vote_contestant}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{vote_contestant}}`.
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (16)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 14:28:51 [error] [exception.CDbException] CDbException: The table "{{vote_contestant}}" for active record class "Contestant" cannot be found in the database. in /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Contestant))
+#1 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(16): CActiveRecord->__construct()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=contestant/add
+---
+2016/12/09 14:30:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vote.{{vote_contestant}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{vote_contestant}}`.
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (16)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 14:30:38 [error] [exception.CDbException] CDbException: The table "{{vote_contestant}}" for active record class "Contestant" cannot be found in the database. in /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Contestant))
+#1 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(16): CActiveRecord->__construct()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=contestant/add
+---
+2016/12/09 14:30:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vote.{{vote_contestant}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{vote_contestant}}`.
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (16)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 14:30:39 [error] [exception.CDbException] CDbException: The table "{{vote_contestant}}" for active record class "Contestant" cannot be found in the database. in /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Contestant))
+#1 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(16): CActiveRecord->__construct()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=contestant/add
+---
+2016/12/09 14:42:20 [error] [exception.CException] CException: Property "CDbCriteria.contestantName" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/schema/CDbCriteria.php(160): CComponent->__set('contestantName', 'abc')
+#1 /mnt/code/yii1.1-test/framework/db/schema/CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 /mnt/code/yii1.1-test/framework/db/ar/CActiveRecord.php(1474): CDbCommandBuilder->createCriteria(Array, Array)
+#3 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(41): CActiveRecord->findAll(Array)
+#4 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionInfo()
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('info')
+#9 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/info')
+#10 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=contestant/info
+---
+2016/12/09 14:50:26 [error] [exception.Error] Error: Call to a member function delete() on null in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:54
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionDelete()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('delete')
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/dele...')
+#6 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php?r=contestant/delete
+---
+2016/12/09 15:03:51 [error] [php] Undefined variable: pageInfo (/mnt/code/yii1.1-test/yii/protected/views/contestant/index.php:22)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(869): ContestantController->renderFile()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(782): ContestantController->renderPartial()
+#2 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(12): ContestantController->render()
+#3 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#8 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/index
+in /mnt/code/yii1.1-test/yii/protected/views/contestant/index.php (22)
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (12)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:04:18 [error] [php] include(Pagination.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(64): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionPage()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/page
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (64)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:22:53 [error] [php] include(Pagination.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(19): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/index
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (19)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:22:53 [error] [php] include(Pagination.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(19): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/index
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (19)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:25:10 [error] [php] include(Pagination.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(19): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/index
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (19)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:25:10 [error] [php] include(Pagination.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(19): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/index
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (19)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:29:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: select * from vote_contestant 10.
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (21)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 15:29:20 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: select * from vote_contestant 10 in /mnt/code/yii1.1-test/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(21): CDbCommand->queryAll()
+#2 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionIndex()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/inde...')
+#8 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=contestant/index
+---
+2016/12/09 16:35:20 [error] [php] Use of undefined constant contestant - assumed 'contestant' (/mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:41)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (41)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:35:20 [error] [php] Use of undefined constant contestant - assumed 'contestant' (/mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:41)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (41)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:36:17 [error] [php] include(number.php): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /mnt/code/yii1.1-test/framework/YiiBase.php(303): class_exists()
+#2 /mnt/code/yii1.1-test/framework/validators/CValidator.php(174): import()
+#3 /mnt/code/yii1.1-test/framework/base/CModel.php(287): createValidator()
+#4 /mnt/code/yii1.1-test/framework/base/CModel.php(260): Contestant->createValidators()
+#5 /mnt/code/yii1.1-test/framework/base/CModel.php(304): Contestant->getValidators()
+#6 /mnt/code/yii1.1-test/framework/web/helpers/CHtml.php(1513): Contestant->isAttributeRequired()
+#7 /mnt/code/yii1.1-test/framework/web/widgets/CActiveForm.php(600): activeLabelEx()
+#8 /mnt/code/yii1.1-test/yii/protected/views/contestant/add.php(10): CActiveForm->labelEx()
+#9 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require()
+#10 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): ContestantController->renderInternal()
+#11 /mnt/code/yii1.1-test/framework/web/CController.php(869): ContestantController->renderFile()
+#12 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(41): ContestantController->renderPartial()
+#13 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#14 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#16 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#17 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#18 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/views/contestant/add.php (10)
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (41)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:40:09 [error] [php] Undefined index: contestant (/mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:32)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (32)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:40:19 [error] [php] Undefined index: contestant (/mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:32)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (32)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:56:06 [error] [php] Undefined index: contestant (/mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:32)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (32)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:56:25 [error] [php] Undefined index: contestant (/mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:32)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
+#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (32)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 16:56:31 [error] [exception.CException] CException: Property "CActiveForm.name" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(161): CComponent->__set('name', 'contestant')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ContestantController), 'CActiveForm', Array)
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(197): CBaseController->createWidget('CActiveForm', Array)
+#3 /mnt/code/yii1.1-test/yii/protected/views/contestant/add.php(3): CBaseController->beginWidget('CActiveForm', Array)
+#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
+#7 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(48): CController->renderPartial('add', Array)
+#8 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#14 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=contestant/add
+HTTP_REFERER=http://www.yii1.com/index.php?r=contestant/add
+---
+2016/12/09 16:56:49 [error] [exception.CException] CException: Property "CActiveForm.name" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(161): CComponent->__set('name', 'contestant')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ContestantController), 'CActiveForm', Array)
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(197): CBaseController->createWidget('CActiveForm', Array)
+#3 /mnt/code/yii1.1-test/yii/protected/views/contestant/add.php(3): CBaseController->beginWidget('CActiveForm', Array)
+#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
+#7 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(48): CController->renderPartial('add', Array)
+#8 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#14 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=contestant/add
+HTTP_REFERER=http://www.yii1.com/index.php?r=contestant/add
+---
+2016/12/09 16:56:50 [error] [exception.CException] CException: Property "CActiveForm.name" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(161): CComponent->__set('name', 'contestant')
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ContestantController), 'CActiveForm', Array)
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(197): CBaseController->createWidget('CActiveForm', Array)
+#3 /mnt/code/yii1.1-test/yii/protected/views/contestant/add.php(3): CBaseController->beginWidget('CActiveForm', Array)
+#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
+#7 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(48): CController->renderPartial('add', Array)
+#8 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#14 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=contestant/add
+HTTP_REFERER=http://www.yii1.com/index.php?r=contestant/add
+---
+2016/12/09 16:58:10 [error] [exception.CException] CException: Property "CActiveForm.options" is not defined. in /mnt/code/yii1.1-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/CWidgetFactory.php(161): CComponent->__set('options', Array)
+#1 /mnt/code/yii1.1-test/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ContestantController), 'CActiveForm', Array)
+#2 /mnt/code/yii1.1-test/framework/web/CBaseController.php(197): CBaseController->createWidget('CActiveForm', Array)
+#3 /mnt/code/yii1.1-test/yii/protected/views/contestant/add.php(3): CBaseController->beginWidget('CActiveForm', Array)
+#4 /mnt/code/yii1.1-test/framework/web/CBaseController.php(126): require('/mnt/code/yii1....')
+#5 /mnt/code/yii1.1-test/framework/web/CBaseController.php(95): CBaseController->renderInternal('/mnt/code/yii1....', Array, true)
+#6 /mnt/code/yii1.1-test/framework/web/CController.php(869): CBaseController->renderFile('/mnt/code/yii1....', Array, true)
+#7 /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php(48): CController->renderPartial('add', Array)
+#8 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#9 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#13 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#14 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=contestant/add
+HTTP_REFERER=http://www.yii1.com/index.php?r=contestant/add
+---
+2016/12/09 17:10:06 [error] [php] move_uploaded_file(./assets/upload/time()Desert.jpg): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/web/CUploadedFile.php:198)
+Stack trace:
+#0 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
 #5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
 #6 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#7 /mnt/code/yii1.1-test/yii/index.php(12): CWebApplication->run()
-REQUEST_URI=/index.php?r=gii
-in /mnt/code/yii1.1-test/yii/index.php (12)
-2016/12/08 18:08:30 [error] [php] scandir() has been disabled for security reasons (/mnt/code/yii1.1-test/framework/gii/GiiModule.php:216)
+#7 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (40)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 17:10:20 [error] [php] move_uploaded_file(./assets/upload/1481274620Desert.jpg): failed to open stream: No such file or directory (/mnt/code/yii1.1-test/framework/web/CUploadedFile.php:198)
 Stack trace:
-#0 /mnt/code/yii1.1-test/framework/base/CModule.php(90): GiiModule->init()
-#1 /mnt/code/yii1.1-test/framework/YiiBase.php(206): GiiModule->__construct()
-#2 /mnt/code/yii1.1-test/framework/base/CModule.php(282): createComponent()
-#3 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(337): CWebApplication->getModule()
-#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#0 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(286): ContestantController->runAction()
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(265): ContestantController->runActionWithFilters()
+#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): ContestantController->run()
 #5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
 #6 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#7 /mnt/code/yii1.1-test/yii/index.php(12): CWebApplication->run()
-REQUEST_URI=/index.php?r=gii
-in /mnt/code/yii1.1-test/yii/index.php (12)
-2016/12/08 18:08:49 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+#7 /mnt/code/yii1.1-test/yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=contestant/add
+in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php (40)
+in /mnt/code/yii1.1-test/yii/index.php (13)
+2016/12/09 17:10:31 [error] [exception.Error] Error: Call to a member function getName() on null in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:35
 Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
+#0 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#6 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php?r=contestant/add
+HTTP_REFERER=http://www.yii1.com/index.php?r=contestant/add
 ---
-2016/12/08 18:09:16 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
+2016/12/09 17:11:37 [error] [exception.Error] Error: Call to a member function getName() on null in /mnt/code/yii1.1-test/yii/protected/controllers/ContestantController.php:36
 Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:09:19 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:09:19 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:09:19 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:09:27 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:09:56 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:10:44 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:10:45 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:10:45 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:15 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:16 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:17 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:17 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:17 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:17 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:17 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:18 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:26 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:27 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:27 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
----
-2016/12/08 18:12:27 [error] [exception.CHttpException.403] CHttpException: You are not allowed to access this page. in /mnt/code/yii1.1-test/framework/gii/GiiModule.php:170
-Stack trace:
-#0 /mnt/code/yii1.1-test/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
-#1 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('')
-#2 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
-#3 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
-#4 /mnt/code/yii1.1-test/yii/index.php(12): CApplication->run()
-#5 {main}
-REQUEST_URI=/index.php?r=gii
+#0 /mnt/code/yii1.1-test/framework/web/actions/CInlineAction.php(49): ContestantController->actionAdd()
+#1 /mnt/code/yii1.1-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /mnt/code/yii1.1-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /mnt/code/yii1.1-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(282): CController->run('add')
+#5 /mnt/code/yii1.1-test/framework/web/CWebApplication.php(141): CWebApplication->runController('contestant/add')
+#6 /mnt/code/yii1.1-test/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#7 /mnt/code/yii1.1-test/yii/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php?r=contestant/add
+HTTP_REFERER=http://www.yii1.com/index.php?r=contestant/add
 ---

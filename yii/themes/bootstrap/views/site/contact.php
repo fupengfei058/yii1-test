@@ -37,7 +37,7 @@ If you have business inquiries or other questions, please fill out the following
 
 	<div class="<?php echo $form->fieldClass($model, 'name'); ?>">
 		<?php echo $form->labelEx($model,'name'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php echo $form->textField($model,'name'); ?>
 			<?php echo $form->error($model,'name'); ?>
 		</div>
@@ -45,7 +45,7 @@ If you have business inquiries or other questions, please fill out the following
 
 	<div class="<?php echo $form->fieldClass($model, 'email'); ?>">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php echo $form->textField($model,'email'); ?>
 			<?php echo $form->error($model,'email'); ?>
 		</div>
@@ -53,7 +53,7 @@ If you have business inquiries or other questions, please fill out the following
 
 	<div class="<?php echo $form->fieldClass($model, 'subject'); ?>">
 		<?php echo $form->labelEx($model,'subject'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
 			<?php echo $form->error($model,'subject'); ?>
 		</div>
@@ -61,7 +61,7 @@ If you have business inquiries or other questions, please fill out the following
 
 	<div class="<?php echo $form->fieldClass($model, 'body'); ?>">
 		<?php echo $form->labelEx($model,'body'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
 			<?php echo $form->error($model,'body'); ?>
 		</div>
@@ -70,19 +70,19 @@ If you have business inquiries or other questions, please fill out the following
 	<?php if(CCaptcha::checkRequirements()): ?>
 	<div class="<?php echo $form->fieldClass($model, 'verifyCode'); ?>">
 		<?php echo $form->labelEx($model,'verifyCode'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php $this->widget('CCaptcha'); ?><br/>
 			<?php echo $form->textField($model,'verifyCode'); ?>
 			<?php echo $form->error($model,'verifyCode'); ?>
-			<p class="help-block">
+			<span class="help-block">
 				Please enter the letters as they are shown in the image above.
 				<br/>Letters are not case-sensitive.
-			</p>
+			</span>
 		</div>
 	</div>
 	<?php endif; ?>
 
-	<div class="form-actions">
+	<div class="actions">
 		<?php echo BHtml::submitButton('Submit'); ?>
 	</div>
 

@@ -24,7 +24,7 @@ $this->breadcrumbs=array(
 
 	<div class="<?php echo $form->fieldClass($model, 'username'); ?>">
 		<?php echo $form->labelEx($model,'username'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php echo $form->textField($model,'username'); ?>
 			<?php echo $form->error($model,'username'); ?>
 		</div>
@@ -32,7 +32,7 @@ $this->breadcrumbs=array(
 
 	<div class="<?php echo $form->fieldClass($model, 'password'); ?>">
 		<?php echo $form->labelEx($model,'password'); ?>
-		<div class="controls">
+		<div class="input">
 			<?php echo $form->passwordField($model,'password'); ?>
 			<?php echo $form->error($model,'password'); ?>
 			<span class="help-block">
@@ -42,13 +42,14 @@ $this->breadcrumbs=array(
 	</div>
 
 	<div class="<?php echo $form->fieldClass($model, 'rememberMe'); ?>">
-		<div class="controls">
+		<?php echo $form->labelEx($model,'rememberMe'); ?>
+		<div class="input">
 			<?php echo $form->checkBox($model,'rememberMe'); ?>
 			<?php echo $form->error($model,'rememberMe'); ?>
 		</div>
 	</div>
 
-	<div class="form-actions">
+	<div class="actions">
 		<?php echo BHtml::submitButton('Login'); ?>
 	</div>
 
