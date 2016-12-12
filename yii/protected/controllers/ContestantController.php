@@ -7,6 +7,20 @@
  */
 class ContestantController extends Controller
 {
+    public function actions(){
+        return array(
+            'captcha' => array(
+                'class' => 'system.web.widgets.captcha.OCaptchaAction',
+            ),
+        );
+    }
+
+    public function filters(){
+        return array(
+            'accessControl',
+        );
+    }
+
     public function actionIndex()
     {
         //设置cookie:
@@ -21,35 +35,39 @@ class ContestantController extends Controller
         //销毁cookie:
         $cookie = Yii::app()->request->getCookies();
         unset($cookie['mycookie']);
-
-        $this->render('index');*/
+        */
+        $this->render('index');
     }
 
     //增加记录
     public function actionAdd()
     {
-        $model = new Contestant();
-
-        $model->attributes = $_POST['Contestant'];
-        if(!empty($_POST['Contestant']['picList'])){
-            //文件上传
-            $file = CUploadedFile::getInstance($model,'picList'); //获取表单名为filename的上传信息
-            $filename = $file->getName();//获取文件名
-            $filesize = $file->getSize();//获取文件大小
-            $filetype = $file->getType();//获取文件类型
-            $model->picList = $filename;//数据库中要存放文件名
-            $uploadfile='./assets/upload/'.time().$filename;
-            $file->saveAs($uploadfile,true);//上传操作
+        $model = new Contestant;
+        if(isset($_POST['Contestant'])){
+            $model->attributes = $_POST['Contestant'];//赋空值问题
+            if(!empty($_POST['Contestant']['picList'])){
+                //文件上传
+                $file = CUploadedFile::getInstance($model,'picList'); //获取表单名为filename的上传信息
+                $filename = $file->getName();//获取文件名
+                $filesize = $file->getSize();//获取文件大小
+                $filetype = $file->getType();//获取文件类型
+                $model->picList = $filename;//数据库中要存放文件名
+                $uploadfile='./assets/upload/'.time().$filename;
+                $file->saveAs($uploadfile,true);//上传操作
+            }
+            $model->itemId = 2;
+            $model->sortNum = 4;
+            $model->voteCount = 3;
+            $model->createTime = time();
+            if($model->save()){
+                echo 2;
+                Yii::app()->user->setFlash('success','添加成功');
+                $this->redirect(array('add'));
+            }else{
+                echo 1;
+            }
         }
-
-        if($model->save()){
-            Yii::app()->user->setFlash('success','添加成功');
-            $this->redirect(array('add'));
-        }else{
-            echo 1;
-        }
-
-        $this->renderPartial("add",array("model"=>$model));
+        $this->render("add",array("model"=>$model));
     }
 
     //查询记录
